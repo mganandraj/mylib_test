@@ -6,4 +6,4 @@ struct IMyUtils {
   virtual int getToken() = 0;
 };
 
-std::unique_ptr<IMyUtils> createMyUtils();
+__declspec(dllexport) std::unique_ptr<IMyUtils> createMyUtils();
